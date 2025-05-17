@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    font-size: 1vw;
+}
+
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+header{
+    flex:.4;
+    background-color: rgb(188, 188, 188);
+    display: flex;
+    align-items: center;
+}
+header h1{
+    display: inline-block;
+    margin:0 auto;
+    font-size: calc(4rem - 10px);
+}
+.container{
+    flex:5;
+    display: flex;
+}
+.sketchboard{
+    flex:1;
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.functionality{
+    flex:0.45;
+}
+.sketchboard .board{
+    border: 1px solid black;
+    height:50vmin;
+    width:50vmin;
+    background-color: rgb(244,244,244);
+    display: flex;
+    flex-wrap: wrap;
+}
+.sketchNode{
+    background-color: white
+}
+
+.functionality{
+    display: flex;
+    flex-direction: column;
+    gap:14vh;
+    justify-content: center;
+    align-items: center
+}
+.colorPalette{
+    display: flex;
+    gap:2vh;
+    align-items: center;
+    
+}
+.clearGrid{
+    display: flex;
+    flex-direction: column;
+   align-items: stretch;
+   gap:3vh;
+
+}
+.clearGrid>div>button{
+    height:7vh;
+}
+.colorPalette>div,.clearGrid>div{
+    justify-content: center;
+    border-radius: 10px;
+}
+.grid{
+    height:7vh
+}
+.grid,.clearGrid button{
+    width:10vw;
+    text-align: center;
+}
+button{
+    padding:1rem;
+    flex:1;
+    background-color: rgba(179, 179, 179, 0.757);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: rgb(255, 253, 250);
+    font-weight: bolder;
+}
+
+footer{
+    flex:.15;
+    background-color: rgb(50, 33, 66);
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
